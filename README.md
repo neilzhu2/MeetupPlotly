@@ -5,7 +5,9 @@
 - MeetUp web page
 - Zipcode API
 - Twitter API
-...Please start with "secrets_SAMPLE.py" to get API_keys (the websites are included accordingly), and change the file name to "secrets.py"
+
+Please start with "secrets_SAMPLE.py" to get API_keys (the websites are included accordingly), and change the file name to "secrets.py"
+
 
 ## How to run the program:
 ### 1. Start and OAuthorize
@@ -33,6 +35,7 @@
 - Enter "b" or "B" to go back to Exit
 ### 9*. Others
 - If you try to run app.py, you can check the unfinished raw web version of the program, and due to time constraints, that's far from finishing.
+
 
 ## Intro to .py files:
 ### FinalProject.py
