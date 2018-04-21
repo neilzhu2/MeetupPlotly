@@ -5,7 +5,7 @@
 - MeetUp web page
 - Zipcode API
 - Twitter API
-Please start with "secrets_SAMPLE.py" to get API_keys (the websites are included accordingly), and change the file name to "secrets.py"
+...Please start with "secrets_SAMPLE.py" to get API_keys (the websites are included accordingly), and change the file name to "secrets.py"
 
 ## How to run the program:
 ### 1. Start and OAuthorize
