@@ -1,0 +1,34 @@
+<h2 'background = black; color = white;'>Neil's 507 lo-final project</h2>
+<br />
+<br />
+<h3>EVENTS OF "{{category}}"</h3>
+<br />
+
+<div class = 'plotly' style = 'width: 45%'>
+ {{plotly_locations}}
+</div>
+<div class = 'plotly' style = 'width: 45%'>
+ {{plotly_quantity}}
+</div>
+
+<ol>
+  {% for each in events_list %}
+    <li>
+      {{each.get_name()}}
+    </li>
+  {% endfor %}
+</ol>
+
+
+
+<form action="/eventDetail" method="POST">
+    <p>Event: <input type="text" name="event_index"/></p>
+    <input type="hidden" name="events_list" value={{events_list}} />
+    <input type="hidden" name="zipcode" value={{zip_and_theme[0]}} />
+    <input type="hidden" name="theme" value={{zip_and_theme[1]}} />
+    <p><input type="submit" value="Submit"/></p>
+</form>
+
+<form action="/" method="GET">
+    <p><input type="submit" value="Homepage"/></p>
+</form>

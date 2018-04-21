@@ -1,0 +1,19 @@
+<h2 'background = black; color = white;'>Neil's 507 lo-final project</h2>
+<br />
+<br />
+<h3>ALL THEMES</h3>
+<br />
+
+<ol>
+  {% for each in categories %}
+    <li>
+      {{each[0]}}
+    </li>
+  {% endfor %}
+</ol>
+
+<form action="/eventsList" method="POST">
+    <p>Zipcode: <input type="text" name="zipcode"/></p>
+    <p>Theme: <input type="text" name="theme"/></p>
+    <p><input type="submit" value="Submit"/></p>
+</form>

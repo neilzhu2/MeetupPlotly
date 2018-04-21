@@ -1,0 +1,35 @@
+<h2 style = 'background = black; color = white;'>Neil's 507 lo-final project</h2>
+<br />
+<br />
+<h3>DTAILS OF {{event_name}}</h3>
+<br />
+
+<p>
+  <strong>Time</strong>: {{time}}<br />
+  <strong>Address</strong>: {{address}}<br /><br />
+  <strong>Attendees</strong>: <br />
+  {{attendees_list[0]}}
+  {% for each in attendees_list[1:] %}
+    , {{each}}
+  {% endfor %}
+</p>
+
+
+<div class = 'plotly' style = 'width: 45%'>
+ {{plotly_from}}
+</div>
+<div class = 'plotly' style = 'width: 45%'>
+ {{plotly_interests}}
+</div>
+
+
+
+<form action="/eventDetail" method="POST">
+    <input type="hidden" name="zipcode" value={{zip_and_theme[0]}} />
+    <input type="hidden" name="theme" value={{zip_and_theme[1]}} />
+    <p><input type="submit" value="Back"/></p>
+</form>
+
+<form action="/" method="GET">
+    <p><input type="submit" value="Homepage"/></p>
+</form>
